@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Photo Studio</title>
+  </head>
+  <body>
+    <h2>Photo Studio Booking Form</h2>
+    <form id="bookingForm">
+      <label for="name">Nama:</label>
+      <input
+        type="text"
+        id="name"
+        name="entry.2005620554"
+        required
+      /><br /><br />
+
+      <label for="whatsapp">No. WhatsApp:</label>
+      <input
+        type="text"
+        id="whatsapp"
+        name="entry.687272737"
+        required
+      /><br /><br />
+
+      <label for="package">Paket:</label>
+      <input
+        type="text"
+        id="package"
+        name="entry.1065046570"
+        required
+      /><br /><br />
+
+      <label for="people">Jumlah Orang:</label>
+      <input
+        type="number"
+        id="people"
+        name="entry.1166974658"
+        required
+      /><br /><br />
+
+      <label for="date">Tanggal Foto:</label>
+      <input
+        type="date"
+        id="date"
+        name="entry.1045781291"
+        required
+      /><br /><br />
+
+      <label for="time">Jam Foto:</label>
+      <input
+        type="time"
+        id="time"
+        name="entry.839337160"
+        required
+      /><br /><br />
+
+      <button type="submit">Kirim</button>
+    </form>
+
+    <p id="responseMessage" style="display: none; color: green">
+      Terima kasih! Booking Anda telah dikirim.
+    </p>
+
+    <script>
+      document
+        .getElementById("bookingForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Mencegah form submit secara langsung
+
+          // Ambil data form
+          let formData = new FormData(this);
+
+          // Kirim data menggunakan Fetch API
+          fetch(
+            "https://docs.google.com/forms/d/e/1FAIpQLSdD4Sus-HsJ1rJQ_exfZ88L7ppCDbpjPas863kIjVqLMnPf3w/formResponse",
+            {
+              method: "POST",
+              mode: "no-cors",
+              body: formData,
+            }
+          )
+            .then(() => {
+              document.getElementById("responseMessage").style.display =
+                "block"; // Tampilkan pesan sukses
+              document.getElementById("bookingForm").reset(); // Reset form
+            })
+            .catch((error) => {
+              alert("Error submitting form: " + error);
+            });
+        });
+    </script>
+  </body>
+</html>
