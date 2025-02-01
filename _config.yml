@@ -1,0 +1,6 @@
+title: "Ajyal Project - Jasa Fotografi & Videografi"
+description: "Kami menyediakan jasa fotografi dan videografi profesional."
+url: "https://ajyalproject.xyz" # Ganti dengan domain kamu
+theme: minima # Bisa diganti dengan tema lain
+plugins:
+  - jekyll-seo-tag
