@@ -8,13 +8,10 @@
 
 ## Social Media
 
-[Facebook](https://www.facebook.com/profile.php?id=61571699807078)
-
-[Instagram](https://instagram.com/)
-
-[Tiktok](https://www.tiktok.com/@ajyalproject)
-
-[Pinterest](https://id.pinterest.com/ajyalproject/)
+- [Facebook](https://www.facebook.com/profile.php?id=61571699807078)
+- [Instagram](https://instagram.com/)
+- [Tiktok](https://www.tiktok.com/@ajyalproject)
+- [Pinterest](https://id.pinterest.com/ajyalproject/)
 
 
 © 2025 All Rights Reserved by AJYAL PROJECT
